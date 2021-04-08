@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+    <!-- llamando al icono -->
+    <link rel="icon" type="image/x-icon" href="assets/img/folder.ico">
+    <!-- llamando a fontaweso  -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- llamando a google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <!-- llamando a los estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="primera-pagina">
+    <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Portafolio</a>
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-info text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#sobremi">Sobremi</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead bg-info text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Imagen Principal-->
+            <img class="rounded masthead-avatar mb-5" src="assets/img/undraw_programming_2svr.svg" alt="Mi Logotipo"/>
+            <!-- Titulo Principal-->
+            <h1 class="masthead-heading text-uppercase mb-0">Luis Alberto Islas Castillo</h1>
+            <!-- Iconos de decoracion-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Carrera-->
+            <p class="masthead-subheading font-weight-light mb-0">Licenciado en Ingeniería en Tecnologías de la
+                Información y Comunicación.</p>
+        </div>
+    </header>
+
+    <section class="page-section portfolio" id="portafolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portafolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/proyectos/punto_venta.JPG"
+                            alt="Proyecto de Punto de Venta" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/proyectos/web_estatica.JPG"
+                            alt="Proyecto Miscelanea Don Carmen" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/proyectos/pakal.JPG" alt="Proyecto de Estadia Pakal" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/proyectos/brazos_firmes.JPG" alt="Proyecto Brazos Firmes" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/proyectos/corporativo_pepes.JPG"
+                            alt="Proyecto Corporativo Pepe'ss" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-info text-white mb-0" id="sobremi">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Sobre Mi</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Soy un joven, comprometido y deseoso de integrarme a un equipo de trabajo, en el que
+                        pueda aportar y ampliar mis conocimientos, para aumentar mi experiencia profesional.</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Me interesa el desarrollo web enfocándome en aprender tecnologías y herramientas
+                        modernas para la creación de aplicaciones y sitios web modernos.</p>
+                </div>
+            </div>
+            <br>
+            <!-- Redes Sociales -->
+            <h2 class="page-section-heading text-center text-white">Redes Sociales</h2>
+            <div class="text-center mt-4">
+
+                <a class="btn btn-outline-light btn-social mx-1"
+                    href="https://www.facebook.com/LuisAlbertoIslasCastillo/"><i
+                        class="fab fa-fw fa-facebook-f"></i></a>
+
+                <a class="btn btn-outline-light btn-social mx-1"
+                    href="https://github.com/Luis-Alberto-Islas-Castillo"><i class="fab fa-github"></i></a>
+
+                <a class="btn btn-outline-light btn-social mx-1"
+                    href="https://www.linkedin.com/in/luis-alberto-islas-castillo/"><i
+                        class="fab fa-fw fa-linkedin-in"></i></a>
+
+                <a class="btn btn-outline-light btn-social mx-1"
+                    href="https://es.slideshare.net/LuisAlbertoIslasCast"><i class="fab fa-slideshare"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section portfolio" id="habilidades">
+        <div class="container">
+            <!-- Habilidades Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Abtitudes y Validaciones
+            </h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Cards-->
+            <div class="row">
+
+                <div class="col-md-6 col-lg-6 mb-5" mc-auto>
+                    <h5 class="card-header">Tecnologias</h5>
+                    <div class="card-body">
+                        <p class="card-text">Entre algunas de las tecnologías y herramientas en las que tengo
+                            conocimiento son.</p>
+                        <span class="badge badge-info badge-pill">JAVASCRIPT</span>
+                        <span class="badge badge-info badge-pill">HTML5</span>
+                        <span class="badge badge-info badge-pill">CSS3</span>
+                        <span class="badge badge-info badge-pill">PHP</span>
+                        <span class="badge badge-info badge-pill">MYSQL</span>
+                        <span class="badge badge-info badge-pill">GIT</span>
+                        <span class="badge badge-info badge-pill">BOOSTRAP</span>
+                        <span class="badge badge-info badge-pill">NODE.JS</span>
+                        <span class="badge badge-info badge-pill">EXPRESS</span>
+                        <span class="badge badge-info badge-pill">DESARROLLO WEB</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <h5 class="card-header">Aptitudes</h5>
+                    <div class="card-body">
+                        <p class="card-text">Algunas de mis aptitudes intrapersonales que he adquirido a lo largo de mi
+                            formación son las siguientes</p>
+                        <span class="badge badge-info badge-pill">Trabajo en Equipo</span>
+                        <span class="badge badge-info badge-pill">Comprometido</span>
+                        <span class="badge badge-info badge-pill">Proactivo</span>
+                        <span class="badge badge-info badge-pill">Resiliency</span>
+                        <span class="badge badge-info badge-pill">Desarrollo Personal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Titulo-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Punto de Venta</h2>
+                                <!-- Iconos-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/proyectos/punto_venta.JPG"
+                                    alt="Proyecto de Punto de Venta" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Codificación y desarrollo de un proyecto de punto de venta.
+                                </p>
+                                <p class="mb-5">Basándome en los conocimientos obtenidos y para resolver las necesidades
+                                    de una tienda y como parte del programa de estudios de la carrera tecnologías de la
+                                    información y comunicación han sido integradas mejoras en diseño, facilidad de uso y
+                                    seguridad.
+                                </p>
+                                <a class="btn btn-secondary" href="https://github.com/Luis-Alberto-Islas-Castillo">
+                                    <i class="fab fa-github"></i>
+                                    Ver codigo
+                                </a>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cerrar Ventana
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Titulo-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Miscelanea don Carmen</h2>
+                                <!-- Iconos-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/proyectos/web_estatica.JPG"
+                                    alt="Proyecto Miscelanea Don Carmen" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Desarrollo y codificación del proyecto Miscelánea don Carmen, como plus
+                                    para la promoción de sus productos y servicios. Con la integración de nuevos
+                                    conocimientos obtenidos se completaron nuevas mejoras en diseño, usabilidad y
+                                    responsive design.
+                                </p>
+                                <a class="btn btn-secondary"
+                                    href="https://github.com/Luis-Alberto-Islas-Castillo/Primer-Proyecto-Integrador-Actualizado.git">
+                                    <i class="fab fa-github"></i>
+                                    Ver codigo
+                                </a>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cerrar Ventana
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Titulo-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Proyecto Pakal</h2>
+                                <!-- Iconos-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/proyectos/pakal.JPG"
+                                    alt="Proyecto Miscelanea Don Carmen" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Basándome en los conocimientos obtenidos y como parte del proceso de
+                                    estadía de la carrera de Tecnologías de la Información y Comunicación se realizaron
+                                    mejoras en la codificación y base de datos para un ERP resolviendo nuevas
+                                    necesidades de una compañía mediante el uso intermediario de la Empresa Pakal S.A de
+                                    C.V.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cerrar Ventana
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Titulo-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Proyecto Brazos Firmes</h2>
+                                <!-- Iconos-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/proyectos/brazos_firmes.JPG"
+                                    alt="Proyecto Miscelanea Don Carmen" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Proyecto escolar cuya participación consistió en el desarrollo de
+                                    documentación y panificación de requerimientos para la implementación de una
+                                    aplicación web que permita registrar y administrar los datos para la entrega de
+                                    prótesis 3D a niños de escasos recursos.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cerrar Ventana
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Titulo-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Proyecto Pagina Web Pepe'ss</h2>
+                                <!-- Iconos-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/proyectos/corporativo_pepes.JPG"
+                                    alt="Proyecto Miscelanea Don Carmen" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Como parte del proceso de estadía de la carrera de Tecnologías de la
+                                    Información y Comunicación se desarrolló el proyecto Pagina Web Pepe’ss, para que
+                                    dicho corporativo pudiera realizar la promoción de sus productos y servicios.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cerrar Ventana
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Pagina -->
+    <footer class="copyright py-4 text-center text-white">
+        <div class="container"><small> Copyright © Portafolio Profesional 2021</small></div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
