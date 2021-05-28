@@ -10052,6 +10052,18 @@ h3 {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 9px !important;
+}
+
+.btn-skill {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 4.25rem;
+  height: 4.25rem;
+  font-size: 2.3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9px !important;
 }
 
 .scroll-to-top {
@@ -10115,7 +10127,7 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #17a2b8;
   }
 
   #mainNav.navbar-shrink {
@@ -10138,7 +10150,7 @@ h3 {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 35rem;
+  width: 19rem;
 }
 
 @media (min-width: 992px) {
