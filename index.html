@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Portafolio Profesional</title>
     <!-- Icono-->
-    <link rel="icon" type="image/x-icon" href="assets/folder.svg"/>
+    <link rel="icon" type="image/x-icon" href="assets/folder.svg" />
     <!-- llamando a fontaweso  -->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Icons-->
@@ -21,6 +21,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Llamando a los estilos css de libreia Toastr-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body id="page-top">
@@ -28,7 +30,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a href="index.html">
-                <img src="assets/Logo.png"  width="45" height="45" alt="Mi Icono">
+                <img src="assets/Logo.png" width="45" height="45" alt="Mi Icono">
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -139,7 +141,8 @@
             <div class="row g-0">
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/fullsize/punto_venta.JPG" title="Proyecto Punto de Venta">
-                        <img class="img-fluid" src="assets/img/thumbnails/punto_venta.JPG" alt="Proyecto Punto de Venta"/>
+                        <img class="img-fluid" src="assets/img/thumbnails/punto_venta.JPG"
+                            alt="Proyecto Punto de Venta" />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">Proyecto Escolar</div>
                             <div class="project-name">Punto de Venta</div>
@@ -148,7 +151,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/fullsize/web_estatica.JPG" title="Miscelanea">
-                        <img class="img-fluid" src="assets/img/thumbnails/web_estatica.JPG" alt="Miscelanea"/>
+                        <img class="img-fluid" src="assets/img/thumbnails/web_estatica.JPG" alt="Miscelanea" />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">Proyecto Escolar</div>
                             <div class="project-name">Miscelanea</div>
@@ -157,7 +160,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/fullsize/pakal.JPG" title="Proyecto Pakal">
-                        <img class="img-fluid" src="assets/img/thumbnails/pakal.JPG" alt="Proyecto Pakal"/>
+                        <img class="img-fluid" src="assets/img/thumbnails/pakal.JPG" alt="Proyecto Pakal" />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">Proyecto de Estadia</div>
                             <div class="project-name">Pakal</div>
@@ -174,8 +177,10 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/fullsize/corporativo_pepes.JPG" title="Corporativo Pepe`ss">
-                        <img class="img-fluid" src="assets/img/thumbnails/corporativo_pepes.JPG" alt="Corporativo Pepe`ss"/>
+                    <a class="portfolio-box" href="assets/img/fullsize/corporativo_pepes.JPG"
+                        title="Corporativo Pepe`ss">
+                        <img class="img-fluid" src="assets/img/thumbnails/corporativo_pepes.JPG"
+                            alt="Corporativo Pepe`ss" />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">Proyecto de Estadia</div>
                             <div class="project-name">Corporativo Pepe'ss</div>
@@ -194,20 +199,58 @@
                     <hr class="divider" />
                 </div>
             </div>
-            
-               <!-- Redes Sociales-->
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <form id="contactForm" action="https://formspree.io/f/mbjqynjb" method="POST"
+                        enctype="multipart/form-data" autocomplete="off">
+                        <!-- Imput nombre -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="nombre" name="nombre"
+                                placeholder="Ingrese su nombre" data-toggle="tooltip" data-placement="top"
+                                title="Ingrese su nombre completo" required>
+                            <label for="nombre" class="col-md-3 col-form-label">Nombre</label>
+                        </div>
+                        <!-- Imput email -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="email" id="email" name="email" multiple
+                                placeholder="Ingrese su email" data-toggle="tooltip" data-placement="top"
+                                title="Ingrese su email" required>
+                            <label for="email" class="col-md-3 col-form-label">Email</label>
+                        </div>
+                        <!-- Imput telefono -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="tel" id="telefono" name="telefono"
+                                placeholder="Ingrese su telefono" data-toggle="tooltip" data-placement="top"
+                                title="Ingrese su telefono" required>
+                            <label for="telefono" class="col-md-3 col-form-label">Telefono</label>
+                        </div>
+                        <!-- Imput mensaje-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" rows="5" id="asunto" name="mensaje"
+                                placeholder="Ingrese su mensaje" data-toggle="tooltip" data-placement="top"
+                                title="Ingrese un mensaje" style="height: 10rem" required></textarea>
+                            <label for="mensaje" class="col-md-3 col-form-label">Mensaje</label>
+                        </div>
+
+                        <!-- Boton Enviar -->
+                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="alert"
+                                type="submit">Enviar</button></div>
+                    </form>
+                </div>
+            </div>
+            <!-- Redes Sociales-->
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    
+
                     <a class="btn btn-outline-primary btn-social mx-1"
-                    href="https://github.com/Luis-Alberto-Islas-Castillo"><i class="fab fa-github"></i></a>
+                        href="https://github.com/Luis-Alberto-Islas-Castillo"><i class="fab fa-github"></i></a>
 
-                <a class="btn btn-outline-primary btn-social mx-1"
-                    href="https://www.linkedin.com/in/luis-alberto-islas-castillo/"><i
-                        class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-social mx-1"
+                        href="https://www.linkedin.com/in/luis-alberto-islas-castillo/"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
 
-                <a class="btn btn-outline-primary btn-social mx-1"
-                    href="https://es.slideshare.net/LuisAlbertoIslasCast"><i class="fab fa-slideshare"></i></a>
+                    <a class="btn btn-outline-primary btn-social mx-1"
+                        href="https://es.slideshare.net/LuisAlbertoIslasCast"><i class="fab fa-slideshare"></i></a>
 
                 </div>
             </div>
@@ -223,10 +266,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+     <!-- Llamando a Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+     <!-- Llamndo a Tostr-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 
 </html>

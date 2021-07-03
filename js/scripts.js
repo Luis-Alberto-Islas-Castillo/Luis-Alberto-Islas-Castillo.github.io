@@ -49,3 +49,35 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+/*Envv¡io de datos en Formulario*/ 
+const $form = document.querySelector('#contactForm')
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if(response.ok){
+        this.reset()
+        /* alert('Mensaje Enviado') */
+    }
+}
+
+/*Alerta*/
+const alert = document.querySelector('#alert');
+alert.addEventListener('click', () => {
+console.log("Pro");
+    // Display an info toast with no title
+    toastr.success('Gracias por comunicarte te responderé lo mas pronto posible ', 'Correo Enviado', {
+        timeOut: 2000,
+        "positionClass": "toast-bottom-right",
+    });
+})
